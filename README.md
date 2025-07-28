@@ -1,6 +1,7 @@
 # Korobeinix
 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
+![CI](https://github.com/LeDevNovice/korobeinix/actions/workflows/ci.yml/badge.svg)
 
 ### Why “Korobeinix” ?
 
