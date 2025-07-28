@@ -1,0 +1,34 @@
+# Node / PNPM
+node_modules/
+.pnpm
+
+# Build outputs
+dist-*/
+
+# Vite cache
+.vite/
+
+# Logs & reports
+npm-debug.log*
+pnpm-debug.log*
+coverage/
+*.lcov
+
+# Env & secrets
+.env*
+!.env.example
+
+# IDE / OS artefacts
+.idea/
+.vscode/
+.DS_Store
+
+# Playwright / Vitest
+playwright/.cache/
+test-results/
+
+# Drizzle migrations build cache
+drizzle/migrations/.build
+
+# Husky
+.husky/
