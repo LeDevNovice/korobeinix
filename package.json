@@ -10,6 +10,7 @@
     "lint": "eslint \"{apps,packages}/**/*.{ts,tsx,js,jsx}\" --no-error-on-unmatched-pattern",
     "size": "node scripts/size-limit.mjs",
     "test": "vitest",
+    "test:ci": "vitest --run --passWithNoTests",
     "typecheck": "pnpm -r exec tsc --noEmit",
     "prepare": "husky"
   },
