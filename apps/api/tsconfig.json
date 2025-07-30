@@ -1,1 +1,5 @@
-{ "extends": "../../config/tsconfig.api.json", "references": [] }
+{
+  "extends": "../../config/tsconfig.api.json",
+  "compilerOptions": { "allowImportingTsExtensions": true, "noEmit": true },
+  "include": ["src"]
+}

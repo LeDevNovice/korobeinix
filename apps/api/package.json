@@ -1,0 +1,10 @@
+{
+  "name": "@korobeinix/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch src -e ts,js --exec tsx src/server.ts",
+    "test": "vitest"
+  }
+}
