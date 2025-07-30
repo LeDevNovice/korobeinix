@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ESNext",
+    "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "lib": ["ES2022", "DOM"],
     "strict": true,
@@ -10,7 +10,6 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "skipLibCheck": false,
-    "importsNotUsedAsValues": "error",
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
     "esModuleInterop": false,

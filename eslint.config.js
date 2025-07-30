@@ -7,6 +7,7 @@ import importPlugin from 'eslint-plugin-import'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import globals from 'globals'
 import prettier from 'eslint-config-prettier'
+import tseslintPlugin from '@typescript-eslint/eslint-plugin'
 import path from 'node:path'
 
 const rootDir = path.resolve()
@@ -20,8 +21,9 @@ export default tseslint.config(
     name: 'base',
     plugins: {
       import: importPlugin,
-      'unused-imports': await import('eslint-plugin-unused-imports'),
-      'simple-import-sort': await import('eslint-plugin-simple-import-sort'),
+      'unused-imports': (await import('eslint-plugin-unused-imports')).default,
+      'simple-import-sort': (await import('eslint-plugin-simple-import-sort')).default,
+      '@typescript-eslint': tseslintPlugin,
     },
     ...js.configs.recommended,
     rules: {
@@ -40,6 +42,7 @@ export default tseslint.config(
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       'jsx-a11y': jsxA11y,
+      '@typescript-eslint': tseslintPlugin,
     },
     languageOptions: {
       parser: tseslint.parser,
