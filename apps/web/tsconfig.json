@@ -1,1 +1,9 @@
-{ "extends": "../../config/tsconfig.web.json", "references": [] }
+{
+  "extends": "../../config/tsconfig.web.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": ["src"]
+}
